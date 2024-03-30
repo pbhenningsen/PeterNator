@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://GPT_mobile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Mobile.gd" type="Script" id=2]
+[ext_resource path="res://TerminatorGenisys-Vodx.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="Mobile" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="PhoneNotification" type="Control" parent="."]
+
+[node name="RotatePhone" type="Label" parent="PhoneNotification"]
+margin_right = 958.0
+margin_bottom = 537.0
+custom_colors/font_color = Color( 0.858824, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Please Rotate Your Phone"
+align = 1
+valign = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GPT_Mobile" parent="CanvasLayer" instance=ExtResource( 1 )]

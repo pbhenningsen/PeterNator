@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="PeterTronForReal"
+run/main_scene="res://Menu.tscn"
+boot_splash/bg_color=Color( 0.0431373, 0.00784314, 0.00784314, 1 )
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=960
+window/size/height=540
+window/stretch/mode="viewport"
+
+[global]
+
+"soft input mode"=false
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+theme/custom_font="res://TerminatorGenisys-Vodx.ttf"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.027451, 0.0196078, 0.0666667, 1 )
+environment/default_environment="res://default_env.tres"
